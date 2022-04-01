@@ -1,6 +1,14 @@
 @import './Styles/Variables/colors';
 @import './Styles/Variables/fonts';
 
+@import './Styles/Components/startScreen';
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: $background-color-dark;
     color: $font-titles-dark;
@@ -9,4 +17,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    .main-container{
+        width: 100%;
+        max-width: 400px;
+        height: 600px;
+        border: 1px white solid;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
