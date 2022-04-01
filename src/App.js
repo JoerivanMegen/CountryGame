@@ -3,9 +3,9 @@ import StartScreen from './Components/StartScreen';
 
 function App() {
   return (
-    <StartScreen>
-    
+    <StartScreen />
   )
+  
 }
 
 export default App
