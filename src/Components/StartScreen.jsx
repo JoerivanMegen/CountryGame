@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
+
+
+
 
 export default function StartScreen() {
     return (
         <div className="main-container">
             <div className="start-container">
                 <div className="info-button">
+                    <FontAwesomeIcon icon={faInfo} size="2x" />
                     {/* insert modal functionality */}
                 </div>
                 <div className="start-title">
@@ -12,7 +18,6 @@ export default function StartScreen() {
                 </div>
                 <div className="short-explanation">
                     <p> As soon as you click the start button below, the game starts.
-                        <br/>
                         To see the rules, you can click the info button in the top right corner.
                         <br/><br/>
                         <strong>IMPORTANT:</strong> when you click the start button, you will have limited time to answer the questions. Make sure you are ready!
