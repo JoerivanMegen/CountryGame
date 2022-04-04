@@ -1,23 +1,12 @@
-.main-container {
-  width: 100%;
-  max-width: 400px;
-  height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: red;
-  margin-top: 10vh;
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+h1, h2, h3, h4, h5 {
+  font-family: 'Oxygen', sans-serif;
 }
 
-.main-container .start-container {
-  width: 100%;
-  height: 100%;
+.start-container {
+  width: 50vw;
+  min-width: 300px;
+  height: 50vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,11 +23,11 @@
           flex-direction: column;
 }
 
-.main-container .start-container .info-button {
+.start-container .info-button {
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #2e2e2e;
+  background-color: #2b2b2b;
   width: 40px;
   height: 40px;
   border-radius: 5px;
@@ -53,13 +42,98 @@
           align-items: center;
 }
 
-.main-container .start-container .info-button svg {
+.start-container .info-button svg {
   color: whitesmoke;
 }
 
-.main-container .start-container .short-explanation {
-  width: 80%;
+.start-container .info-button:hover {
+  cursor: pointer;
+}
+
+.start-container .start-title {
+  width: 200px;
+}
+
+.start-container .short-explanation {
+  width: 60%;
   text-align: center;
+}
+
+.start-container .start-button {
+  text-decoration: none;
+  width: 170px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  color: whitesmoke;
+  background-color: #50ce50;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.start-container .start-button:hover {
+  background-color: #58bb58;
+}
+
+.navbar-container {
+  height: 8vh;
+  width: 100vw;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 2px 0px black;
+          box-shadow: 0px 0px 2px 0px black;
+}
+
+.navbar-container .navbar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60vw;
+  min-width: 300px;
+}
+
+.navbar-container .navbar-flex svg {
+  color: whitesmoke;
+}
+
+.navbar-container .navbar-flex svg:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.navbar-container .navbar-flex .button-flex {
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container .navbar-flex .hamburger-menu {
+  display: none;
 }
 
 * {

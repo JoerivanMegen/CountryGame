@@ -1,9 +1,13 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
 import StartScreen from './Components/StartScreen';
 
 function App() {
   return (
-    <StartScreen />
+    <div>
+      <Navbar />
+      <StartScreen />
+    </div>
   )
   
 }

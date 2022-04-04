@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -9,10 +7,6 @@ export default function StartScreen() {
     return (
         <div className="main-container">
             <div className="start-container">
-                <div className="info-button">
-                    <FontAwesomeIcon icon={faInfo} size="2x" />
-                    {/* insert modal functionality */}
-                </div>
                 <div className="start-title">
                     <h3>Welcome to Flaggle!</h3>
                 </div>
@@ -23,7 +17,7 @@ export default function StartScreen() {
                         <strong>IMPORTANT:</strong> when you click the start button, you will have limited time to answer the questions. Make sure you are ready!
                     </p>
                 </div>
-                <button>START</button>
+                <button className="start-button">START</button>
             </div>
         </div>
     )
