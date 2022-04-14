@@ -8,7 +8,7 @@ export default function StartScreen() {
         <div className="main-container">
             <div className="start-container">
                 <div className="start-title">
-                    <h3>Welcome to Flaggle!</h3>
+                        <h3>Welcome to Flaggle!</h3>
                 </div>
                 <div className="short-explanation">
                     <p> As soon as you click the start button below, the game starts.
@@ -18,6 +18,7 @@ export default function StartScreen() {
                     </p>
                 </div>
                 <button className="start-button">START</button>
+                <p></p>
             </div>
         </div>
     )
